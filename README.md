@@ -21,6 +21,10 @@ Before running the script, make sure you have the following:
 python git_alias_manager.py
 ```
 - The script will automatically set the aliases defined in the alias_dict dictionary. Uncomment the line remove_git_alias(key) if you wish to remove the aliases after they have been set.
+- Run Automatically on linux
+```bash
+curl -s https://raw.githubusercontent.com/pip-install-skills/Git-Alias-Manager/refs/heads/main/main.py | python3
+```
 
 ## Alias Definitions
 
