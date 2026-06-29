@@ -28,7 +28,7 @@ alias_dict = {
     "rh" : r"reset --hard",                     #discards all changes and resets to the specified commit if not previous commit, removing untracked files.
     "s" : r"status",                            #shows the current status of the repository.
     "se" : r"log --grep",                       #shows commit history filtered by a specific search pattern in commit messages.
-    "clean-gone": r"!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D"
+    "clean-gone": "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D",
                                                 #removes local branches that have been deleted from the remote repository, ensuring that your local branch list is up to date and free of stale branches.
 }
 
